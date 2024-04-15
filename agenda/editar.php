@@ -11,15 +11,12 @@ if (isset($_POST['id']) && isset($_POST['nome']) && isset($_POST['preco'])) {
 
     // Prepara a consulta SQL
     $stmt = $conexao->prepare("UPDATE itens SET nome=?, preco=? WHERE id=?");
-    if (!$stmt) {
-        echo "Erro ao preparar a consulta: " . $conexao->error;
-    }
 
     // Vincula os parâmetros e executa a consulta
     $stmt->bind_param("sii", $nome, $preco, $id);
     $result = $stmt->execute();
     if (!$result) {
-        echo "Erro ao executar a consulta: " . $stmt->error;
+        echo "Erro ao executar a consulta ";
     } else {
         echo "Atualização realizada com sucesso!";
     }
