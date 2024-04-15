@@ -26,11 +26,11 @@ if (isset($_POST['id']) && isset($_POST['nome']) && isset($_POST['preco'])) {
 
     // Fecha a consulta
     $stmt->close();
+
 } else {
     echo "Erro: Todos os campos devem ser preenchidos.";
 }
 ?>
-
 <form action="" method="post">
     <div class="mb-3">
         <label for="nameInput" class="form-label">Nome completo</label>
@@ -42,6 +42,10 @@ if (isset($_POST['id']) && isset($_POST['nome']) && isset($_POST['preco'])) {
     </div>
     <input type="hidden" name="id" value="<?= $id ?>">
     <input type="submit" value="Enviar">
+
 </form>
+
+
+
 
 <?php include_once ("templates/footer.php") ?>
