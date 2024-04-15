@@ -1,0 +1,58 @@
+* {
+
+    box-sizing: border-box;
+}
+header  {
+
+    width:  100%;
+    color: black;
+}
+#navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+   width: 100%;
+    padding: 30px;
+    background-color:crimson;
+}
+#img-logo {
+
+  position: absolute;
+  left: 9.5%;
+  top: 20px;
+}
+
+.nav-li  {
+    
+    display: inline-block;
+    top: 20px;
+    text-decoration:  none ;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.nav-li:hover  {
+    
+    color: gray;
+    transition: 1ms;
+}
+
+/*  footer */
+
+ footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+ }
+
+ #button-edit , #button-trash {
+    margin-left: 20px;
+   
+ }
