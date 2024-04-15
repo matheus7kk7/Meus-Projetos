@@ -1,4 +1,7 @@
 <?php include_once ("templates/header.php") ?>
-<title>Contatos</title>
+<title>Home</title>
+
+
+
 
 <?php include_once ("templates/footer.php") ?>

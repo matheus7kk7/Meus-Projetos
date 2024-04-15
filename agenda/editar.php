@@ -27,6 +27,7 @@ if (isset($_POST['id']) && isset($_POST['nome']) && isset($_POST['preco'])) {
     // Fecha a consulta
     $stmt->close();
 
+
 } else {
     echo "Erro: Todos os campos devem ser preenchidos.";
 }

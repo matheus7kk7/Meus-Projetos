@@ -1,10 +1,20 @@
 <?php include_once ("templates/header.php") ?>
 
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  $nome = $_POST['nome'];
-  $preco = $_POST['preco'];
+  /*Essa linha de código está verificando se o método de solicitação usado para acessar a página é POST.
+   Isso é útil quando você deseja executar uma determinada lógica 
+  apenas quando o formulário é enviado via método POST. */
+
+  if (isset($_POST['nome']) && isset($_POST['preco'])) {
+
+    $nome = $_POST['nome'];
+    $preco = $_POST['preco'];
+
+  }
+
 }
 if (!empty($nome) && !empty($preco)) {
 
@@ -15,8 +25,9 @@ if (!empty($nome) && !empty($preco)) {
 
   $stmt->execute();
   $stmt->close();
+
 } else {
-  echo "Insira os dados ";
+  echo "Insira os dados obrigatórios do formulario ";
 }
 ?>
 

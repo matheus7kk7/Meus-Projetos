@@ -1,13 +1,14 @@
 <?php include_once ("templates/header.php"); ?>
+
 <?php
-$result = $conexao->query("SELECT * from itens"); //Query de listagem dos dados Obs::Querys de seleção não precisam ser preparadas
-if (isset($_POST['nome']) && isset($_POST['preco'])) {//Verifica se os dados foram passados no formulario 
+$result = $conexao->query("SELECT * FROM itens  ORDER BY id ASC");
+//Query de listagem dos dados Obs::Querys de seleção não precisam ser preparadas , Ordenadas pela coluna id em ordem crescente
+if (isset($_POST['nome']) && isset($_POST['preco'])) {
+  //Verifica se as colunas existem e foram preenchidas na página de cadastro e estão preenchidos
   $nome = $_POST['nome']; //$nome recebe o array '$_POST['nome'] via post
   $preco = $_POST['preco'];//$preco recebe o array'$_POST['preco'] via post
 
 }
-
-
 ?>
 
 
