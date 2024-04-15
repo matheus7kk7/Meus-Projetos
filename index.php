@@ -26,5 +26,6 @@
 
     ?>
 </body>
+<h1> <a href="contact.php" target="">Clique aqui</a></h1>
 
 </html>
