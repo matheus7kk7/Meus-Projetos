@@ -1,6 +1,5 @@
-# Olá ,Mundo !
- primeiro  repositório github do curso em video
+# CRUD PRECEDURAL PHP 
+ 
+ Exemplo de Crud Básico de forma precedural em php utilizando bind params para proteger o site contra slq injections
 
- Criado por matheus7k
- teste
- teste2
+ Creator: Matheus7kk7
